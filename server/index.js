@@ -47,6 +47,10 @@ const data = {
 const app = new express();
 
 app.use(express.static("dist"));
+
+app.get("/data",async(_req, res)=>{
+    res.json(data);
+})
 app.get('/',async (_req,res)=>{
     const index = readFileSync('public/index.html','utf8');
     const rendered= renderToString(<App {...data} />);
