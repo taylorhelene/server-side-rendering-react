@@ -48,6 +48,8 @@ const app = new express();
 
 app.use(express.static("dist"));
 
+
+
 app.get("/data",async(_req, res)=>{
     res.json(data);
 })

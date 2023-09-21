@@ -24,9 +24,13 @@ function handleModifiedAnswerVotes(answerId,increment){
         }
     });
     render();
+  
 }
+
+
 function render(){
     ReactDOM.hydrate(<App {...state} handleModifiedAnswerVotes={handleModifiedAnswerVotes}/>,document.querySelector("#Container"));
 }
 
 //render();
+
