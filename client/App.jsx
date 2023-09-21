@@ -1,9 +1,20 @@
-import React from "react"
+import React from "react";
 
-export const App =()=>{
+export const App =({questions, answers})=>{
     return(
         <div>
-            React Component
+            <h1>
+                Q & A tool
+            </h1>
+            {questions.map(({questionId,content})=>{
+                return(
+                <div key={questionId}>
+                    <h3>
+                        {content}
+                    </h3>
+                </div>
+                );
+            })}
         </div>
     )
 }
