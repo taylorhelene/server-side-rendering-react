@@ -1,5 +1,7 @@
 // this was befor we added babelrc file, we can now use es6 scripts const express = require ('express');
+import React from 'react';
 import express from 'express';
+
 import {readFileSync} from 'fs';
 
 const app = new express();
