@@ -12,7 +12,7 @@ fetch("http://localhost:7777/data")
         render();
     })
 
-
+// http://localhost:7777/data to see data
 
 function handleModifiedAnswerVotes(answerId,increment){
     state.answers = state.answers.map(answer=>{
