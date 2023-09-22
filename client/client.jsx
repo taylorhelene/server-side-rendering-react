@@ -8,7 +8,7 @@ fetch("http://localhost:7777/data")
     .then(data=>data.json())
     .then(json=>{
         state=json;
-        console.log("the state", state);
+        console.log("the derived state", state);
         render();
     })
 
