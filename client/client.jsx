@@ -13,7 +13,6 @@ fetch("http://localhost:7777/data")
     })
 
 
-//ReactDOM.render(<App/>,document.querySelector("#Container"))
 
 function handleModifiedAnswerVotes(answerId,increment){
     state.answers = state.answers.map(answer=>{
