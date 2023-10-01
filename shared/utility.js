@@ -1,4 +1,4 @@
-export function handleModifiedAnswerVotes(answerId,increment){
+export function handleModifiedAnswerVotes(answers,answerId,increment){
     return answers.map(answer=>{
         if(answer.answerId!==answerId){
             return answer;
