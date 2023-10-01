@@ -50,7 +50,11 @@ const app = new express();
 
 app.use(express.static("dist"));
 
-
+app.get("/vote/:answerId",(req,res)=>{
+    const{query,params} = req;
+    data.answers = handleModifiedAnswerVotes(data.answers,params.answerId, +query.increment);
+    res.send("OK");
+})
 
 app.get("/data",async(_req, res)=>{
     res.json(data);

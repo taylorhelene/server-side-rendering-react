@@ -19,6 +19,7 @@ fetch("http://localhost:7777/data")
 function handlVote(answerId,increment){
     state.answers = handleModifiedAnswerVotes(state.answers,answerId,increment)
     
+    fetch(`vote/${answerId}?increment=${increment}`)
     render()
 }
 
