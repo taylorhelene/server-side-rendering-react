@@ -1,11 +1,14 @@
 import React from "react";
 
+
 export const App =({questions, answers, handleModifiedAnswerVotes})=>{
     return(
-        <div>
-            <h1>
-                Q & A tool
+        <div className="container">
+            <header className="page-header">
+            <h1 className="jumbotron text-center text-primary">
+                Question  and Answer tool 
             </h1>
+            </header>
             {questions.map(({questionId,content})=>{
                 return(
                 <div key={questionId}>
