@@ -22,8 +22,8 @@ export const App =({questions, answers, handleModifiedAnswerVotes})=>{
                                     <span>
                                         {content} - {upvotes}
                                     </span>
-                                    <button onClick={()=>handleModifiedAnswerVotes(answerId,1) }>+</button>
-                                    <button onClick={()=>handleModifiedAnswerVotes(answerId,-1) }>-</button>
+                                    <button onClick={()=>handleModifiedAnswerVotes(answerId,1) } className="well btn btn-primary">+</button>
+                                    <button onClick={()=>handleModifiedAnswerVotes(answerId,-1) } className="well btn btn-primary">-</button>
                                 </div>
                             )
                         })}
