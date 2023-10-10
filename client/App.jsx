@@ -8,7 +8,19 @@ export const App =({questions, answers, handleModifiedAnswerVotes})=>{
             <h1 className="jumbotron text-center text-primary m-5">
                 Question  and Answer tool 
             </h1>
+
+            <div className=" w-10 h-10 border rounded float-end bg-warning bg-gradient object-fit-cover text-center">
+                <h2>Total Votes <br/> ⭐</h2>
+                <h2>{
+                answers.map((answer)=>{
+                    return answer.upvotes;
+                }).reduce((accumulator, currentValue) => 
+                { return accumulator + currentValue; })
+                }
+                </h2>
+            </div>
             </header>
+            
             {questions.map(({questionId,content})=>{
                 return(
                 <div key={questionId}>
