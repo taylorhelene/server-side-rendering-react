@@ -6,7 +6,7 @@ export const App =({questions, answers, handleModifiedAnswerVotes})=>{
         <div className="container">
             <header className="page-header border  border-top-0 border-white">
             <h1 className="jumbotron text-center text-primary m-5">
-                Question  and Answer tool 
+                Quiz Vote Counter 
             </h1>
 
             <div className=" w-10 h-10 border rounded float-end bg-info bg-gradient object-fit-cover text-center">
