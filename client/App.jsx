@@ -9,7 +9,7 @@ export const App =({questions, answers, handleModifiedAnswerVotes})=>{
                 Question  and Answer tool 
             </h1>
 
-            <div className=" w-10 h-10 border rounded float-end bg-warning bg-gradient object-fit-cover text-center">
+            <div className=" w-10 h-10 border rounded float-end bg-info bg-gradient object-fit-cover text-center">
                 <h2>Total Votes <br/> ⭐</h2>
                 <h2>{
                 answers.map((answer)=>{
