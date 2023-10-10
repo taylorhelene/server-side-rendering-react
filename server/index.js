@@ -123,5 +123,5 @@ app.get('/',async (_req,res)=>{
 
 })
 
-app.listen(7777);
+app.listen(80);
 console.info("listen");
