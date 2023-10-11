@@ -123,5 +123,8 @@ app.get('/',async (_req,res)=>{
 
 })
 
-app.listen(80);
+const PORT = process.env.PORT || 443;
+app.listen(PORT, '0.0.0.0', () => {
+   console.log(`Server Started at Port ${PORT}`)
+});
 console.info("listen");
